@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .main-sec{
+            padding: 80px;
+        }
+    </style>
+  </head>
+  <body>
+    <section class="main-sec container text-center">
+        <h1 class="card-title text-warning">Money Master 💰</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-2 mt-0" style="padding: 50px;">
+        <div class="col">
+          <div class="card">
+            <img src="master.jpg" class="card-img-top img-fluid w-100" alt="..." style="height: 700px;">
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-center bg-light" style="height: 700px; width: 600px;">
+            <div class="card-body">
+              <h2>Income</h2>
+              <div class="d-flex justify-content-end gap-2 w-100" style="padding: 20px; padding-right: 120px;">
+                <h5 class="">Income:</h5>
+                <input type="number" aria-label="First name" value="45000" class="form-control w-50 border-0 rounded-0 bg-secondary-subtle" id="Income">
+            </div>
+            <div class="text-center">
+                <h2>Expenses</h2>
+            </div>
+              <div class="d-flex justify-content-end gap-2" style="padding: 10px; padding-right: 120px;">
+                <h5>Food:</h5>
+                <input type="number" aria-label="First name" class="form-control w-50 border-0 rounded-0 bg-secondary-subtle" id="food">
+            </div>
+              <div class="d-flex justify-content-end gap-2" style="padding: 10px; padding-right: 120px;">
+                <h5>Rent:</h5>
+                <input type="number" aria-label="First name" class="form-control w-50 border-0 rounded-0 bg-secondary-subtle" id="rent">
+            </div>
+              <div class="d-flex justify-content-end gap-2" style="padding: 10px; padding-right: 120px;">
+                <h5>Clothes:</h5>
+                <input type="number" aria-label="First name" class="form-control w-50 border-0 rounded-0 bg-secondary-subtle" id="clothes">
+            </div>
+            <button type="button" class="btn btn-primary w-25 mt-3" id="Calculate">Calculate</button>
+            <div class="text-center mt-4">
+                <h5>Total Expenses:<span id="Expenses"> 5500</span></h5>
+                <h5>Balance: <span id="Balance"> 4500</span></h5>
+            </div>
+            <div class="d-flex justify-content-end gap-2 mt-3">
+                <h5>Save:</h5>
+                <input type="number" aria-label="First name" value="25" class="form-control border-0 rounded-0 bg-secondary-subtle me-2 w-25 h-100" id="saveinput">  % 
+                <button type="button" class="btn btn-primary w-25 h-100 mt-3 border-0 rounded-0 text-center" id="Save">Save</button>
+            </div>
+            <div class="text-center mt-5">
+                <h5>Saving Amount:<span id="SavingAmount"> 2000</span></h5>
+                <h5>Remaining Balance:<span id="leftover"> 2500</span></h5>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="money.js"></script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
